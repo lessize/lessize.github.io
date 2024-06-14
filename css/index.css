@@ -14,12 +14,6 @@
 }
 
 
-header, section, footer {
-  background-color: #6B7B8B;
-  border-bottom: 2px solid var(--color-line);
-}
-
-
 
 /* 태그 리셋 */
 * {
@@ -51,6 +45,11 @@ main {
 main > section {
   height: 100vh;  
   padding-top: 10vh;
+}
+
+header, section, footer {
+  background-color: #6B7B8B;
+  border-bottom: 2px solid var(--color-line);
 }
 
 h2 {
@@ -210,6 +209,12 @@ header nav ul li {
   width: 90%;
   height: 60%;
   background-color: aliceblue;
+}
+
+#intro .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
