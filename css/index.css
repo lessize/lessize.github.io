@@ -1,0 +1,238 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* color */
+:root {
+  --color-line: #97a2ad;
+}
+
+
+header, section, footer {
+  background-color: #6B7B8B;
+  border-bottom: 2px solid var(--color-line);
+}
+
+
+
+/* 태그 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Pretendard-Regular';
+  font-size: 2vh;
+  font-weight: 300;
+  color: inherit;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+/* common */
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;  /* 전체 화면을 차지하도록 설정 */
+}
+
+main {
+  flex: 1;
+  overflow: hidden; /* 스크롤을 위해 메인 영역에 오버플로우 숨기기 */
+}
+
+main > section {
+  height: 100vh;  
+  padding-top: 10vh;
+}
+
+h2 {
+  font-family: 'Playfair Display';
+  font-size: 8vh;
+}
+
+
+
+/* header */
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+}
+
+header h1 {
+  line-height: 10vh;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header nav ul li {
+  padding: 0 20px;
+}
+
+
+
+/* landing */
+#land {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#land .container {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+#land .container .pbox {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  align-items: end;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+#land .container .pbox p {
+  font-family: 'Playfair Display';
+}
+
+#land .container .pbox .explain {  
+  padding: 0 20px 90px 0;
+}
+
+#land .container .pbox .explain p {
+  text-align: end;
+}
+
+#land .container .pbox .myname {
+  font-size: 9.7vh;
+  line-height: 9.7vh;
+  text-align: start;
+  position: absolute;
+  bottom: 20vh;
+}
+
+#land .container .pbox .prtfl {
+  font-size: 30vh;
+  line-height: 20vh;
+  padding-left: 20%;
+}
+
+#land .container .video_box {
+  width: 100%;
+  overflow: hidden;
+  border-left: 2px solid var(--color-line);
+}
+
+#land .container .video_box video {
+  margin-top: 14vh;
+  height: 100%;
+}
+
+/* scroll down */
+.scrolldown-wrapper {
+	left: 97%;
+	position: absolute;
+	text-align: center;
+	bottom: 60vh;
+	transform: translate(-50%, -50%);
+}
+  
+.scrolldown {
+	border: 2px solid #333;
+	border-radius: 30px;
+	height: 46px;
+	margin: 0 auto 8px;
+	text-align: center;
+	width: 30px;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	fill: #333;
+}
+  
+.scrolldown-p2 {
+	animation-delay: .75s;
+}
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -8px);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, 8px);
+	}
+}
+
+
+
+/* introduce */
+#intro {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  overflow: hidden;
+}
+
+#intro .title {
+  border-right: 2px solid var(--color-line);
+}
+
+#intro .title h2 {
+  line-height: 40vh;
+}
+
+#intro .title div {
+  width: 90%;
+  height: 60%;
+  background-color: aliceblue;
+}
+
+
+
+/* skill */
+#skill {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+}
+
+
+
+/* portfolio */
+
+#portf .btn {
+  display: flex;
+  justify-content: center
+}
+
+
+
+/* contact */
+#contact {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+}
