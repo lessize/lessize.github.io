@@ -13,8 +13,6 @@
   --color-line: #97a2ad;
 }
 
-
-
 /* 태그 리셋 */
 * {
   margin: 0;
@@ -28,7 +26,6 @@
   box-sizing: border-box;
   text-align: center;
 }
-
 
 /* common */
 .wrap {
@@ -59,6 +56,13 @@ h2 {
 
 
 
+
+
+
+
+
+
+
 /* header */
 header {
   width: 100%;
@@ -73,6 +77,13 @@ header h1 {
   line-height: 10vh;
 }
 
+header h1 a img {
+  width: 100%;
+  height: 80%;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
 header nav ul {
   display: flex;
   justify-content: center;
@@ -83,6 +94,13 @@ header nav ul {
 header nav ul li {
   padding: 0 20px;
 }
+
+
+
+
+
+
+
 
 
 
@@ -190,6 +208,13 @@ header nav ul li {
 
 
 
+
+
+
+
+
+
+
 /* introduce */
 #intro {
   display: grid;
@@ -208,14 +233,37 @@ header nav ul li {
 #intro .title div {
   width: 90%;
   height: 60%;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+}
+
+#intro .title div img {
+  width: 80%;
+  height: 90%;
 }
 
 #intro .content {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
+#intro .content h3 {
+  line-height: 10vh;
+  font-size: 2.7vh;
+  font-weight: 700;
+}
+
+#intro .content .certi {
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -225,14 +273,280 @@ header nav ul li {
   grid-template-columns: 3fr 7fr;
 }
 
+#skill .title {
+  border-right: 1px solid var(--color-line);
+}
+
+#skill .title h2 {
+  line-height: 90vh;
+}
+
+#skill .skill_list .list_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+#skill .skill_list .list_wrap li {
+  width: 100%;
+  position: relative;
+  display: grid; place-items: center;
+}
+
+#skill .skill_list .list_wrap li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+#skill .skill_list .list_wrap li .progress {
+  appearance: none;
+  width: 60vh;
+}
+
+#skill .skill_list .list_wrap li .progress::-webkit-progress-bar {
+  background-color: #6B7B8B;
+  border-radius: none;
+  border: 1px solid #4a5661;
+  width: 60vh;
+  height: 20px;
+}
+
+#skill .skill_list .list_wrap li .progress::-webkit-progress-value {
+  background-color: #4a5661;
+}
+
+/* slider */
+#skill .slider-wrapper {
+  position:relative;
+  max-width: 90rem;
+  min-width: 480px;
+  background:#fff;
+  margin: 0 auto;
+  overflow:hidden;
+  box-shadow: 0 0 35px 20px #DDE5EE;
+  .slider{
+    position:relative;
+    height: 65rem;
+    padding: 5rem 0;
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .slide-wrapper {
+      position:relative;
+      display:block;
+      width:100%;
+        height:100%;
+    }
+  }
+  
+  #skill .slide-navigation__squares, .slide-navigation__txt {
+    width:10%;
+    position:relative;
+    float:left;
+     overflow:hidden; 
+    
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+  #skill .slide-navigation__txt {
+    display:block;
+    height:100%;
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    #skill ul {
+      margin:0;
+      list-style:none;
+      padding:0;
+      position:absolute;  
+      display:table-cell;
+      width: 30rem;
+      transform:rotate(90deg);
+      transform-origin:0;
+      margin-left:calc(50% - 0.14rem);
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+    #skill li {
+      text-transform:uppercase;
+      letter-spacing:0.2rem;
+      margin: 0 1.2rem;
+      position:relative;
+      float:left;
+      font-size:1.2rem;
+      font-weight:600;
+      color:#A1A5B8;
+      span {
+        cursor:pointer;
+        transition: all 0.5s ease;
+        display:block;
+        &.active{
+          transform: scale(1.1, 1.1);
+          color: #E34D67;
+        }
+      }
+    }
+    
+  }
+  
+  #skill .slide-navigation__squares{
+     display:block;
+     height:100%;
+    .squares-wrapper{
+      position:absolute;
+      margin-left: calc(50% - 0.4rem);
+      bottom: 5rem;
+      height: 4.6rem;
+      overflow:hidden;
+    }
+    #skill .squares-slider{
+      position:relative;
+      display:block;
+      margin-top:-2.5rem;
+      transform:translateY(-2.5rem);
+    }
+    
+    #skill .square{
+      width: 0.6rem;
+      height:0.6rem;
+      display:block;
+      margin:1.3rem 0;
+      background:#A1A5B8;
+      &.red{
+        background: #E34D67;
+      }
+    }
+    
+  }
+  
+  #skill .slides-container {
+    position:relative;
+    width:80%;
+    float:left;
+    height:100%;
+  }
+  
+  #skill .slide {
+    position:absolute;
+    display:block;
+    width:100%;
+    height:100%;
+    opacity:0;
+    visibility:hidden;
+    overflow:hidden;
+    z-index:1;
+    
+    #skill img {
+      max-width:100%;
+      display:block;
+      height:100%;
+      object-fit:cover;
+    }
+    #skill .slide-content{
+      position:absolute;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      padding: 5rem 5.8rem;
+      overflow:hidden;
+      #skill h1 {
+        text-transform:uppercase;
+        color:white;
+        font-weight:900;
+        font-size:10rem;
+        text-align:center;
+        margin:0;
+        opacity:0.6;
+        position:relative;
+      }
+      #skill h2 {
+        color:#E34D67;
+        font-size:4.8rem;
+        max-width:80%;
+        margin:0;
+        margin-top:-6rem;
+        font-weight:900;
+        line-height:1;
+        position:relative;
+        
+      }
+    }
+    #skill .slide-txt{
+      position:relative;
+      display:block;
+      width:100;
+      margin-top:6rem;
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      #skill p {
+        margin:0;
+        max-width:55%;
+        color:#666666;
+        font-size:1.2rem;
+        line-height:1.4;
+        float:left;
+      }
+      #skill button {
+        display:block;
+        float:right;
+        width:18rem;
+        text-align:center;
+        background:transparent;
+        background-color:transparent;
+        border:0.28rem solid #E34D67;
+        text-transform:uppercase;
+        padding:0.8rem 0.5rem;
+        font-size:1.5rem;
+        color: #E34D67;
+        font-weight:600;
+        letter-spacing:0.2rem;
+        outline:none;
+        overflow:hidden;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
 
 
 /* portfolio */
-
+#portf h2 {
+  line-height: 20vh;
+}
 #portf .btn {
   display: flex;
   justify-content: center
 }
+
+
+
+
+
+
+
 
 
 
