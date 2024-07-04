@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/index.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1><a href="#land"><img src="./img/logo.png" alt="nylee"></a></h1>
+      <nav>
+        <ul>
+          <li><a href="#intro">ABOUT ME</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#portf">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="land">
+        <div class="container">
+          <div class="pbox">
+            <div class="explain">
+              <p>Hello. I hope this site finds you well.</p>
+              <p>This is my portfolio site.</p>
+              <p>And I'm a new developer who is ready.</p>
+              <p>Please, scroll down your mouse.</p>
+              <div class="scrolldown-wrapper">
+                <div class="scrolldown">
+                  <svg height="30" width="10">
+                    <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                    <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="myname">Nayoung Lee</p>
+            <p class="prtfl">portfolio</p>
+          </div>
+          <div class="video_box">
+            <video autoplay muted loop>
+              <source src="./img/video/Astro.mp4" type="video/mp4">
+              "해당 브라우저 환경에서는 비디오가 지원되지 않습니다."
+            </video>
+          </div>
+        </div>
+      </section>
+      <section id="intro">
+        <div class="title">
+          <h2>ABOUT ME</h2>
+          <div><img src="./img/cats.png" alt="cats"></div>
+        </div>
+        <div class="content">
+          <ul>
+            <li>
+              <div>
+                <p>안녕하세요. 신입 개발자 이나영입니다.</p>
+                <p>넓은 시야로 보며 계속 배우고 발전하는 모습을 보여드리겠습니다.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>BIRTH</h3>
+                <p>1997.02.02</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>CITY</h3>
+                <p>울산광역시 북구</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>EDUCATION</h3>
+                <p>API, 크롤러 활용 빅데이터 시각화 웹서비스 개발자 양성 과정</p>
+                <p>스마트기기 UXUI 디자인 (디지털 앱, 웹디자인) 양성 과정</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="skill">
+        <div class="title">
+          <h2>SKILL</h2>
+        </div>
+        <div class="skill_list">
+          <ul class="list_wrap">
+            <li>
+              <h3>JAVA</h3>
+              <progress class="progress java" data-final-value="75" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>ORACLE XE 18C</h3>
+              <progress class="progress ora" data-final-value="70" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>PYTHON</h3>
+              <progress class="progress py" data-final-value="70" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>HTML5</h3>
+              <progress class="progress html" data-final-value="100" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>CSS</h3>
+              <progress class="progress css" data-final-value="90" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>JAVASCRIPT</h3>
+              <progress class="progress js" data-final-value="80" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>SPRING FRAMEWORK</h3>
+              <progress class="progress spr" data-final-value="70" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>THYMELEAF</h3>
+              <progress class="progress thy" data-final-value="70" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>GIT/GITHUB</h3>
+              <progress class="progress git" data-final-value="70" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>ADOBE PHOTOSHOP</h3>
+              <progress class="progress ps" data-final-value="90" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>ADOBE ILLUSTRATOR</h3>
+              <progress class="progress ai" data-final-value="90" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>ADOBE INDESIGN</h3>
+              <progress class="progress id" data-final-value="70" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>ADOBE AFTER EFFECTS</h3>
+              <progress class="progress ae" data-final-value="75" min="0" max="100"></progress>
+            </li>
+            <li>
+              <h3>ADOBE PREMIERE PRO</h3>
+              <progress class="progress pr" data-final-value="75" min="0" max="100"></progress>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="portf">
+        <div class="container">
+          <div class="port_title">
+            <h2>PORTFOLIO</h2>
+          </div>
+          <div class="content">
+            <div id="tabs">
+              <ul id="accordion">
+                <li class="fadeinli">
+                  <a class="active" href="#tabs-1">   
+                    <div class="tag">
+                      <h3>PROJECT 1</h3>
+                    </div>
+                  </a>
+                    <div class="addon fadein">
+                      <h4>빅데이터 분석을 통한 대시보드 시각화 프로젝트</h4>
+                      <p>팀 : 산 안 오르는 산쟁이들</p>
+                      <p>2024.04.20</p>
+                      <p>작업 내용 : 등산로 코스에 대한 정보를 분석하고 시각화</p>
+                      <p>PPT 페이지 : 41p ~ 48p</p>
+                      <a class="para-a" href="https://docs.google.com/presentation/d/1eAwi0wSnrrfWlkwEB6A4hUbDB6yIed8R/edit#slide=id.p41">PPT 확인하기</a>
+                      <a class="para-a" href="#">코드 확인하기</a>
+                    </div>
+                </li>
+                <li>
+                  <a href="#tabs-2">   
+                    <div class="tag">
+                      <h3>PROJECT 2</h3>
+                    </div>
+                  </a>
+                    <div class="addon">
+                      <h4>자연어 처리를 통한 Naver Blog 등산 후기 분석</h4>
+                      <p>팀 : 산 안 오르는 산쟁이들</p>
+                      <p>2024.05.02</p>
+                      <p>작업 내용 : 네이버 api를 활용해 블로그 글 크롤링, <br> 형용사 토큰화, 어근 추출, 감성 사전 제작</p>
+                      <p>PPT 페이지 : 13p, 18p ~ 24p</p>
+                      <a class="para-a" href="https://docs.google.com/presentation/d/1lTbta5W6aEig9IXonNTR0URRUgzHYety/edit#slide=id.p13">PPT 확인하기</a>
+                      <a class="para-a" href="#">코드 확인하기</a>
+                    </div>
+                </li>
+                <li>
+                  <a href="#tabs-3">   
+                    <div class="tag">
+                      <h3>PROJECT 3</h3>
+                    </div>
+                  </a>
+                    <div class="addon">
+                      <h4>H!KERS 등산 정보 검색 및 커뮤니티 서비스</h4>
+                      <p>팀 : 산 안 오르는 산쟁이들</p>
+                      <p>2024.06.13</p>
+                      <p>작업 내용 : 회원 관리 기능, 메인 페이지, UI, 공공 API</p>
+                      <p>PPT 페이지 : 43p ~ 47p</p>
+                      <a class="para-a" href="https://docs.google.com/presentation/d/1xRFlSSZn9vH3NsMiAS3Ma1nA_25G35et/edit#slide=id.p1">PPT 확인하기</a>
+                      <a class="para-a" href="#">코드 확인하기</a>
+                    </div>
+                </li>
+              </ul>
+              <div class="browser">
+                <div class="top-bar">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+                <div id="tabs-1"></div>
+                <div id="tabs-2"></div>
+                <div id="tabs-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>CONTACT ME</h2>
+        <ul class="contact_list">
+          <li>
+            <div>
+              <h3>TEL</h3>
+              <p>010-4447-1858</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>E-MAIL</h3>
+              <p>lessize@naver.com</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
