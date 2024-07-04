@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // slider
-  var tabs = document.querySelectorAll('#accordion li a');
+  var tabs = document.querySelectorAll('#accordion > li > a');
   var addons = document.querySelectorAll('.addon');
   var accordion = document.getElementById('accordion');
   var topBar = document.querySelector('#tabs > div > div.top-bar')
@@ -155,6 +155,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Initialize the first tab content to be visible
   document.getElementById('tabs-1').style.display = 'block';
 });
+
+// 버튼 누르면 새 창에서 링크 열기
+function navigateToLink(button) {
+  const link = button.getAttribute('data-link');
+  window.open(link, '_blank');
+}

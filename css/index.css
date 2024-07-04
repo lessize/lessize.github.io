@@ -405,6 +405,9 @@ header nav ul li {
   border: none;
   color: #fff;
   transition: opacity 0.3s ease-in-out;
+  background-color: transparent;
+  border: none;
+  opacity: .3;
 }
 
 #portf .content .para-a:hover {
@@ -513,6 +516,7 @@ header nav ul li {
   background-image: url(../img/prj2.jpg);
   background-position: 0% 0%;
   background-size: cover;
+  display: none;
 }
 
 #portf .content #tabs-3 {
@@ -520,6 +524,7 @@ header nav ul li {
   background-image: url(../img/prj3.jpg);
   background-position: 0% 0%;
   background-size: cover;
+  display: none;
 }
 
 
@@ -535,5 +540,48 @@ header nav ul li {
 /* contact */
 #contact {
   display: grid;
-  grid-template-columns: 3fr 7fr;
+  grid-template-columns: 5fr 5fr;
+}
+
+#contact .container {
+  border-right: 1px solid var(--color-line);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact h2 {
+  /* line-height: 90vh; */
+}
+
+#contact .container div {
+  width: 90%;
+  height: 60%;
+  overflow: hidden;
+}
+
+#contact .container div img{
+  width: 80%;
+  /* height: 100%; */
+}
+
+#contact > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact > ul li:first-child {
+  margin-bottom: 20%;
+}
+
+#contact > ul li div h3 {
+  font-weight: 700;
+  font-size: 4vh;
+}
+
+#contact > ul li div p {
+  font-size: 3vh;
 }
