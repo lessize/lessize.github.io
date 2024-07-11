@@ -415,7 +415,7 @@ header nav ul li {
 }
 
 #portf .content .para-a:first-of-type {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 #portf .content .tag {
@@ -456,7 +456,7 @@ header nav ul li {
 #portf .content .addon h4 {
   font-weight: 700;
   font-size: 1.8vh;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 #portf .content .addon p {
@@ -464,11 +464,11 @@ header nav ul li {
 }
 
 #portf .content .addon p:nth-of-type(2) {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 #portf .content .addon p:nth-last-of-type(1) {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 #portf .content .addon p span {
